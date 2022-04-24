@@ -51,13 +51,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'bigday.urls'
+ROOT_URLCONF = 'hannah-ed-wedding.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join('bigday', 'templates'),
+            os.path.join('hannah-ed-wedding', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'bigday.wsgi.application'
+WSGI_APPLICATION = 'hannah-ed-wedding.wsgi.application'
 
 
 # Database
