@@ -10,3 +10,9 @@ data/
 static/
 guests/static/save-the-date/images/archive/
 .DS_Store
+
+##HEROKU##
+*.log
+*.pot
+*.pyc
+__pycache__/

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -120,10 +121,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'static_root'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join('bigday', 'static'),
+    os.path.join(PROJECT_ROOT, 'static'),
 )
 
 # This is used in a few places where the names of the couple are used
@@ -154,3 +156,5 @@ try:
     from .localsettings import *
 except ImportError:
     pass
+
+django_heroku.settings(locals())
