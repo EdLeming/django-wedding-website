@@ -193,7 +193,9 @@ header {
 }
 
 #main-header {
-    background-image: url('../images/wedding-selfie-better.jpg');
+/*     background-image: url('../images/wedding-selfie-better.jpg');*/
+     background-image: url('../images/invite.jpg');
+
 }
 
 header .header-content {
