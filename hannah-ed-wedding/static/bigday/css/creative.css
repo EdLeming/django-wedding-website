@@ -13,6 +13,7 @@ body {
 
 body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    color: #225b30;
 }
 
 hr {
@@ -26,7 +27,8 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    /*color: #f05f40;*/
+    color: #b53c0d;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -55,6 +57,7 @@ p {
 
 .bg-primary {
     background-color: #f05f40;
+    /*background-color: #f29746;*/
 }
 
 .bg-primary a {
@@ -65,6 +68,11 @@ p {
 .bg-dark {
     color: #fff;
     background-color: #222;
+}
+
+.bg-info {
+    background-color: #e3e9e5;
+    /*background-color: #f29746;*/
 }
 
 .text-faded {
