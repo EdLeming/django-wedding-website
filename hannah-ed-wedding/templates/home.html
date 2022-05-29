@@ -30,9 +30,6 @@
                         <a class="page-scroll" href="#swallows-oast">Swallows Oast</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#other-stuff">Everything Else</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#gifts">Gifts</a>
                     </li>
                 </ul>
@@ -43,18 +40,19 @@
     </nav>
     {% block main %}
     <header id="main-header">
+<!--
         <div class="header-content">
             <div class="header-content-inner">
-                <!--<h1>We did it!!</h1> -->
-                {% comment %}
+                <h1>We did it!!</h1>
                 <hr>
                 <h2>It's wedding week!</h2>
                 <a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>
                 <a href="#wedding-day" class="btn btn-success btn-xl page-scroll">Saturday</a>
-                {% endcomment %}
             </div>
         </div>
+-->
     </header>
+<!--
     <section class="bg-info" id="welcome">
         <div class="container">
             <div class="row">
@@ -75,6 +73,7 @@
             </div>
         </div>
     </section>
+-->
     <section class="no-padding" id="navigation">
         <div class="container-fluid">
             <div class="row no-gutter">
@@ -125,10 +124,7 @@
 {% comment %}
         {% include 'partials/wedding-party.html' %}
 {% endcomment %}
-    <section id="other-stuff" class="bg-primary">
-        {% include 'partials/misc.html' %}
-    </section>
-    <section id="gifts">
+    <section id="gifts" class="bg-primary">
         {% include 'partials/gifts.html' %}
     </section>
     {% endblock %}
